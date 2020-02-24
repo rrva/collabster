@@ -44,17 +44,3 @@ jlink {
     addExtraDependencies("javafx")
     imageZip.set(project.file("${project.buildDir}/image-zip/collabster-image.zip"))
 }
-
-
-
-sourceSets {
-    main {
-        java {
-            resources {
-                srcDir("src/main/resources")
-                include("**/*.fxml", "**/*.png")
-            }
-        }
-    }
-}
-
