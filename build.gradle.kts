@@ -43,4 +43,7 @@ jlink {
     }
     addExtraDependencies("javafx")
     imageZip.set(project.file("${project.buildDir}/image-zip/collabster-image.zip"))
+    jpackage {
+        imageOptions = listOf("--icon", "src/main/resources/java.icns")
+    }
 }
